@@ -1,0 +1,18 @@
+<h3 mat-dialog-title>
+  Do you want to remove {{ data.first_name }} {{ data.last_name }}?
+</h3>
+
+<button
+  mat-button
+  (click)="cancel()"
+>
+  No
+</button>
+
+<button
+  mat-button
+  [mat-dialog-close]="data.id"
+  cdkFocusInitial
+>
+  Yes
+</button>

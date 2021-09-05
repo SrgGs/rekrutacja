@@ -1,0 +1,54 @@
+<form
+  class="form"
+  [formGroup]="userForm"
+  (ngSubmit)='save()'
+>
+  <app-input
+    controlName="first_name"
+    [parentFormGroup]="userForm"
+    [options]="USER_FORM.first_name"
+  >
+  </app-input>
+
+  <app-input
+    controlName="last_name"
+    [parentFormGroup]="userForm"
+    [options]="USER_FORM.last_name"
+  >
+  </app-input>
+
+  <app-input
+    controlName="email"
+    [parentFormGroup]="userForm"
+    [options]="USER_FORM.email"
+  >
+  </app-input>
+
+  <app-input
+    controlName="language"
+    [parentFormGroup]="userForm"
+    [options]="USER_FORM.language"
+  >
+  </app-input>
+
+  <app-input
+    controlName="phone"
+    [parentFormGroup]="userForm"
+    [options]="USER_FORM.phone"
+  >
+  </app-input>
+
+  <app-input
+    controlName="position"
+    [parentFormGroup]="userForm"
+    [options]="USER_FORM.position"
+  >
+  </app-input>
+
+  <button
+    mat-button
+    type="submit"
+  >
+    Save
+  </button>
+</form>
